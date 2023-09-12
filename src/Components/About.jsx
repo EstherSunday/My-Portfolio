@@ -4,19 +4,18 @@ import { project7 } from "../assets"
 
 function About() {
 
-  const About = () => {
-    const onButtonClick = () => {
-      fetch('Resume.pdf').then(response => {
-        response.blob().then(blob => {
-          const fileURL = window.URL.createobjectURL(blob);
-          let alink = document.createElement('a');
-          alink.href = fileURL;
-          alink.download = 'Resume.pdf';
-          alink.click();
-        })
-      })
-    }
-  }
+  // const handleDownloadClick = () =>{
+  //   const fileUrl = ""
+
+  //   const anchor = document.createElement("a")
+  //   anchor.href = fileUrl;
+  //   anchor.download = "Esther Sunday CV"
+
+  //   anchor.click();
+
+  //   anchor.remove()
+  // };
+
   return (
     <section id='about' className='bg-violet-200  '>
         <div className='text-center  pt-6 text-4xl	font-bold text-violet-950  '>About</div>
@@ -26,7 +25,7 @@ function About() {
        whileInView={{x:0,opacity:1}}
        transition={{delay:0.8,duration:1}}
        className=''>
-            <img src={ project7 } className='px-10 round'  alt="image kara" srcset="" />
+            <img src={ project7 } className='px-10 rounded-xl'  alt="image kara" srcset="" />
         </motion.div>
 
         
@@ -39,7 +38,7 @@ function About() {
             <p className='font-bold py-2 '>Full Stack Developer</p>
             <p className='pb-9 text-black'> I am a full stack developer, but I specialize more on front end development. I thrive on creating a user-friendly and visually appealing websites. What really excite me is the opportunity to solve real world problems through web development.
           </p>
-            <button   className='font-bold bg-violet-950 px-6 py-3 rounded text-white'>Download CV </button>
+            <button onClick={onButtonClick}  className='font-bold bg-violet-950 px-6 py-3 rounded text-white'>Download CV </button>
         </motion.div>
        </div>
     </section>
