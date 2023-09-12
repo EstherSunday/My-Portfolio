@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="text-2xl">SOCIAL</div>
           <a href=""> < FaLinkedin className="text-3xl text-violet-400" /></a>
           <a href=""> <GrTwitter className="text-3xl text-violet-400" /></a>
-          <a href=""> <GrInstagram className="text-3xl text-violet-400"/></a>
+          <a href="https://instagram.com/kara_the_webdeveloper?igshid=OGQ5ZDc2ODk2ZA=="> <GrInstagram className="text-3xl text-violet-400"/></a>
           <a href=""> <CgVercel className="text-4xl text-violet-400"/></a> 
             
             {contact_info.map((contact, i) => (

@@ -38,7 +38,7 @@ function About() {
             <p className='font-bold py-2 '>Full Stack Developer</p>
             <p className='pb-9 text-black'> I am a full stack developer, but I specialize more on front end development. I thrive on creating a user-friendly and visually appealing websites. What really excite me is the opportunity to solve real world problems through web development.
           </p>
-            <button onClick={onButtonClick}  className='font-bold bg-violet-950 px-6 py-3 rounded text-white'>Download CV </button>
+            <button   className='font-bold bg-violet-950 px-6 py-3 rounded text-white'>Download CV </button>
         </motion.div>
        </div>
     </section>
