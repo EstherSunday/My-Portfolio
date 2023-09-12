@@ -26,7 +26,7 @@ function About() {
        whileInView={{x:0,opacity:1}}
        transition={{delay:0.8,duration:1}}
        className=''>
-            <img src={ project7 } className=''  alt="image kara" srcset="" />
+            <img src={ project7 } className='px-10 round'  alt="image kara" srcset="" />
         </motion.div>
 
         
