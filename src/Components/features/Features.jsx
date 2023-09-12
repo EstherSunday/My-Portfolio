@@ -4,20 +4,20 @@ import data from "./Features-Api"
 import Card from "./Card"
 import { motion } from "framer-motion"
 import {fadeIn  } from  '../Variants'
-import { icon2 } from "../../assets"
-import { icon3 } from "../../assets"
-import { icon4 } from "../../assets"
-import { icon5 } from "../../assets"
+import { icon2, icon3, icon4, icon5, icon6, icon7  } from "../../assets"
+
 
 
 const Features = () => {
   return (
     <>
-    <div id='skills' className='bg-violet-950  grid grid-cols-4 items-center px-10 py-10 '>
-      <img className="w-20" src={ icon2 } alt="" /> 
-       <img className="w-40 " src={icon3 } alt="" srcset="" />  
+    <div id='skills' className='bg-violet-950  grid grid-cols-6 items-center px-5 py-5 '>
+       <img className="wid " src={icon3 } alt="" srcset="" />  
+      <img className="wids" src={ icon2 } alt="" /> 
        <img className="w-10" src={icon4 } alt="" srcset="" />  
        <img className="w-10" src={icon5 } alt="" srcset="" />  
+       <img className="w-10" src={icon6 } alt="" srcset="" />  
+       <img className="w-10" src={icon7 } alt="" srcset="" />  
       </div>
 
       <motion.section 

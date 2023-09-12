@@ -2,7 +2,7 @@ import React from "react"
 import "./Resume.css"
 import ResumeApi from "./ResumeApi"
 import Card from "./Card"
-
+import { motion } from "framer-motion"
 const Resume = () => {
   return (
     <>
@@ -13,7 +13,11 @@ const Resume = () => {
           </div>
 
           <div className='content-section mtop d_flex text-center '>
-            <div className='left  sm:justify'>
+            <motion.div 
+             initial={{x:"-100%",opacity:0}}
+             whileInView={{x:0,opacity:1}}
+             transition={{delay:0.8,duration:1}}
+            className='left  sm:justify'>
               <div className='heading'>
                 <h1>Education </h1>
               </div>
@@ -24,13 +28,15 @@ const Resume = () => {
                     return <Card key={id} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
                   }
                 })}
-
-
-                {/* md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 px-20 */}
                 
               </div>
-            </div>
-            <div className='left text-center'>
+            </motion.div>
+
+            <motion.div 
+            initial={{x:"100%",opacity:0}}
+            whileInView={{x:0,opacity:1}}
+            transition={{delay:0.8,duration:1}}
+            className='left text-center'>
               <div className='heading'>
                 <h1> Experience</h1>
               </div>
@@ -42,7 +48,7 @@ const Resume = () => {
                   }
                 })}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

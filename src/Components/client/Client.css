@@ -18,7 +18,10 @@
   
  }
 
- 
+ .space
+ {
+  margin: 20px;
+ }
 
   .features .box h2 {
     margin: 0px 0 20px 0;

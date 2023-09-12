@@ -23,7 +23,7 @@ const ProjectsCard = ({ title, des, src }) => {
               <span className="text-lg w-10 h-10 rounded-full bg-violet-700 inline-flex justify-center items-center text-black hover:text-designColor duration-300 cursor-pointer">
               <a href="https://github.com/EstherSunday/E-commerce.git"> <BsGithub /></a>
               </span>
-              <span className="text-lg w-10 h-10 rounded-full bg-violet-900 inline-flex justify-center items-center text-black hover:text-designColor duration-300 cursor-pointer">
+              <span className="text-lg w-10 h-10 rounded-full bg-violet-700 inline-flex justify-center items-center text-black hover:text-designColor duration-300 cursor-pointer">
               <a href=""><FaGlobe /></a>
               </span>
             </div>

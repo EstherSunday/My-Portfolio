@@ -1,22 +1,19 @@
 import React from "react";
-// import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation";
 import { icon1 } from "../assets";
 import { motion } from "framer-motion"
 
+
 const Hero = () => {
   const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
+    // "logo-instagram",
+    // "logo-facebook",
+    // "logo-linkedin",
+    // "logo-twitter",
+    
   ];
   return (
     <section
-    // initial={{x:"100%",opacity:0}}
-    // whileInView={{x:0,opacity:1}}
-    // transition={{delay:0.5,duration:2}}
-
       id="home"
       className="h-[600px] flex items-center justify-center m-10"
     >
@@ -69,9 +66,9 @@ const Hero = () => {
                   key={icon}
                   className="text-violet-950 hover:text-violet-900 cursor-pointer "
                 >
-                  <a href="">
-                    <ion-icon name={icon}></ion-icon>
-                  </a>
+            
+                    {/* <ion-icon name={icon}></ion-icon> */}
+                  
                 </div>
               ))}
             </div>

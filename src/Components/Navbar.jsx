@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Logo } from "../assets"
+
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -25,7 +27,8 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
-            K<span className="text-cyan-600">AR</span>A
+            {/* K<span className="text-cyan-600">AR</span>A */}
+            <img src={ Logo }  className="w-10"/>
           </h4>
         </div>
         <div
@@ -64,6 +67,7 @@ const Navbar = () => {
               >
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
+
             ))}
           </ul>
         </div>
